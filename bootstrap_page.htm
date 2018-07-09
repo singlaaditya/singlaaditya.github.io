@@ -14,7 +14,7 @@
 	<style>
 	.topper {
 		background-color: #e8e5db;
-		height: 7vh;
+		height: 10vh;
 	}
 
 	.rop {
@@ -35,18 +35,18 @@
 		color: transparent;
 	}
 	.tota {
-		height: calc(100% - 7vh - 8vh);
+		height: calc(100% - 10vh - 8vh);
 		overflow-y: scroll;
 		background-image: url("texture2.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	.ropa {
-		height: 8vh;
+		height: 12vh;
 		background-color: #81ebe2;
 	}
 	.topa {
-		height: calc(100% - 7vh - 8vh - 8vh);
+		height: calc(100% - 10vh - 12vh - 12vh);
 		overflow-y: scroll;
 
 	}
@@ -58,19 +58,129 @@
 		font-family: 'Oswald', sans-serif;
 
 	}
+	.rap {
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 33vw;
+		display: none;
+	}
 
 	
 </style>
 
 	</head>
 	<body>
-<div class="container-full">
+		<div id="unique1" class="position-fixed fixed-top bg-white rap"> 
+			<div class="container-full">
+				<div class="row no-gutters d-flex flex-row justify-content-center align-items-end p-2" style="height: 20vh; background-color: #42f4c5;">
+                 <div onclick="hideDiv('unique1')"><i class="fa fa-arrow-left text-white" style="font-size:24px"></i></div>
+                 <div class="text-white" style="font-family: 'Oswald', sans-serif;"> &nbsp &nbsp Add group participants</div>
+
+				</div>
+				<div class="row no-gutters style="height: calc(100% - 20vh);">
+				</div>
+
+			</div>
+
+		</div>
+
+
+				<div id="unique2" class="position-fixed fixed-top bg-white rap"> 
+			<div class="container-full">
+<div class="row no-gutters d-flex flex-row justify-content-center align-items-end p-2" style="height: 20vh; background-color: #42f4c5;">
+                 <div onclick="hideDiv('unique2')"><i class="fa fa-arrow-left text-white" style="font-size:24px"></i></div>
+                 <div class="text-white" style="font-family: 'Oswald', sans-serif;"> &nbsp &nbsp Profile</div>
+
+				</div>
+				<div class="row no-gutters style="height: calc(100% - 20vh);">
+				</div>
+
+			</div>
+
+		</div>
+
+
+				<div id="unique3" class="position-fixed fixed-top bg-white rap"> 
+			<div class="container-full">
+<div class="row no-gutters d-flex flex-row justify-content-center align-items-end p-2" style="height: 20vh; background-color: #42f4c5;">
+                 <div onclick="hideDiv('unique3')"><i class="fa fa-arrow-left text-white" style="font-size:24px"></i></div>
+                 <div class="text-white" style="font-family: 'Oswald', sans-serif;"> &nbsp &nbsp Archived chats</div>
+
+				</div>
+				<div class="row no-gutters style="height: calc(100% - 20vh);">
+				</div>
+
+			</div>
+
+		</div>
+
+
+				<div id="unique4" class="position-fixed fixed-top bg-white rap"> 
+			<div class="container-full">
+<div class="row no-gutters d-flex flex-row justify-content-center align-items-end p-2" style="height: 20vh; background-color: #42f4c5;">
+                 <div onclick="hideDiv('unique4')"><i class="fa fa-arrow-left text-white" style="font-size:24px"></i></div>
+                 <div class="text-white" style="font-family: 'Oswald', sans-serif;"> &nbsp &nbsp Starred messages</div>
+
+				</div>
+				<div class="row no-gutters style="height: calc(100% - 20vh);">
+				</div>
+
+			</div>
+
+		</div>
+
+
+				<div id="unique5" class="position-fixed fixed-top bg-white rap"> 
+			<div class="container-full">
+<div class="row no-gutters d-flex flex-row justify-content-center align-items-end p-2" style="height: 20vh; background-color: #42f4c5;">
+                 <div onclick="hideDiv('unique5')"><i class="fa fa-arrow-left text-white" style="font-size:24px"></i></div>
+                 <div class="text-white" style="font-family: 'Oswald', sans-serif;"> &nbsp &nbsp Settings</div>
+
+				</div>
+				<div class="row no-gutters style="height: calc(100% - 20vh);">
+				</div>
+
+			</div>
+
+		</div>
+
+						<div id="unique6" class="position-fixed fixed-top bg-white rap"> 
+			<div class="container-full">
+<div class="row no-gutters d-flex flex-row justify-content-center align-items-end p-2" style="height: 20vh; background-color: #42f4c5;">
+                 <div onclick="hideDiv('unique6')"><i class="fa fa-arrow-left text-white" style="font-size:24px"></i></div>
+                 <div class="text-white" style="font-family: 'Oswald', sans-serif;"> &nbsp &nbsp Settings</div>
+
+				</div>
+				<div class="row no-gutters style="height: calc(100% - 20vh);">
+				</div>
+
+			</div>
+
+		</div>
+
+	<div class="container-full">
 	<div class="row no-gutters topper">
 		<div class="col-md-4 border-right border-light d-flex flex-row justify-content-between  p-2 position-relative">
 			<img src="self.gif" alt="Profile photo" class="rop position-absolute" style="left: 5%; top: 18%;"> 
 			<i class="fa fa-refresh position-absolute" style="font-size:23px; color: #bab8b7;top:28%; right: 30%"></i>
 			<i class="material-icons position-absolute" style="font-size:23px;color: #bab8b7; top:28%; right: 20%;">speaker_notes</i>
-			<i class="fa fa-list position-absolute" style="font-size:23px;color: #bab8b7;top:28%; right: 10%"></i>
+  
+<div class="dropdown position-absolute" style="top:28%; right: 10%;">
+  <a href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     <i class="fa fa-list " style="font-size:23px;color: #bab8b7;"></i>
+  </a>
+
+  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#" style="font-family: 'Oswald', sans-serif;" onclick="showDiv('unique1')">New group</a>
+    <a class="dropdown-item" href="#" style="font-family: 'Oswald', sans-serif;" onclick="showDiv('unique2')">Profile</a>
+    <a class="dropdown-item" href="#" style="font-family: 'Oswald', sans-serif;" onclick="showDiv('unique3')">Archived</a>
+    <a class="dropdown-item" href="#" style="font-family: 'Oswald', sans-serif;" onclick="showDiv('unique4')">starred</a>
+    <a class="dropdown-item" href="#" style="font-family: 'Oswald', sans-serif;" onclick="showDiv('unique5')">Settings</a>
+    <a class="dropdown-item" href="#" style="font-family: 'Oswald', sans-serif;" onclick="showDiv('unique6')">Log out</a>
+  </div>
+</div>
+			
 		</div>
 		<div class="col-md-8 d-flex flex-row justify-content-between p-2">
 		</div>
@@ -185,8 +295,18 @@
 
 	</div>
 
+	<script text="type/javascript">
+function showDiv(ele) {
+	document.getElementById(ele).style.display = "block";
+}
+function hideDiv(ele) {
+	document.getElementById(ele).style.display = "none";
+}
+	</script>
+
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	</body>
