@@ -1,0 +1,13 @@
+button {
+	background-color: blue;
+}
+
+.ini {
+	display: none;
+}
+
+.display_collapse {
+	border: black solid 2px;
+	display: block;
+	width: 50vw;
+}
