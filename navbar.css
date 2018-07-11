@@ -1,0 +1,28 @@
+.nav {
+	background-color: #f0eae8;
+	padding: 2px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: ;
+}
+
+#invi {
+   position: absolute;
+   border: black solid 2px;
+}
+
+.dop {
+   display: none;
+   top: 40px;
+}
+
+.pop {
+	display: block;
+}
+
+#tot {
+	position: relative;
+}
+
